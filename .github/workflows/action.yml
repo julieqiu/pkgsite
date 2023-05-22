@@ -1,0 +1,8 @@
+name: Govulncheck
+on: [push]
+jobs:
+  run-govulncheck:
+    runs-on: ubuntu-latest
+    steps:
+      - id: govulncheck
+        uses: julieqiu/govulncheck-action@v0.1.0-pre
